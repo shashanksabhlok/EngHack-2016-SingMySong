@@ -1,12 +1,3 @@
-/*
-fixFFT http://forum.arduino.cc/index.php/topic,38153.0.html
- this should give an fft with 
- sampling rate:           1ms
- frequency resolution:  500Hz
- lowest frequency:       7.8Hz
- */
-
-//shin: fft with attiny85, rgb led blend with frequency
 
 #include <fix_fft.h>
 //int mic = A0; //electret
@@ -51,7 +42,7 @@ void loop(){
    // m is log2(n) where n is number of data points (log2 (128) = 7)
    //0 is set for forward transform. 1 would be inverse transform. Apparently inverse does not work,
    */
-//  // I am only interessted in the absolute value of the transformation
+//  // I am only interested in the absolute value of the transformation
 //  for (i=0; i< 64;i++){//real val is for the amplitude 
 //    data[i] = sqrt(data[i] * data[i] + im[i] * im[i]); 
 //  }//end for
